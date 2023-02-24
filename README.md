@@ -11,3 +11,6 @@
 2. 修改config.server_info中的file_path为固定目录：/mnt/openebs/test/test.con
 3. 运行pytest-run.py
 
+>本地文件夹
+1. 生成报告需要在本地创建reports 和temp 文件夹
+
