@@ -75,7 +75,7 @@ def query_root_user_info():
 
 # 通过task_name检索对应的传参json
 def query_payload(task_name):
-    file_path = '/Users/liuyang5/PycharmProjects/sx-api-automation/config/business/autotest.xlsx'
+    file_path = '../config/business/autotest.xlsx'
     wb = load_workbook(file_path)
     sheet = wb.active
     col_A = sheet['A']
@@ -101,5 +101,4 @@ def query_entire_zone_id():
     with Mysql() as mysql:
         query_result = mysql.select_one(sql)
     return query_result[0]
-
 
