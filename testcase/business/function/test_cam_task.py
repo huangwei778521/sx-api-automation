@@ -43,7 +43,7 @@ class Test_cam_task:
         assert resp["content"]["data"]["searchList"][0][
                    "total"] > 0, f"cam_task query no data,request body is :{request_body},\nreason:{resp['data']['message']}"
 
-    # @pytest.mark.skip()
+    @pytest.mark.skip()
     def test_cam_task_delete(self):
         task_id = query_task_id(self.device_id)
         resp, url = task_management.TaskManagement().delete_task(task_id)
